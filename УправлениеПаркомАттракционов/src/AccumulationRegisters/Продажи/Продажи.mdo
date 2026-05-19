@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a2b4f21-9206-4bf4-8212-d04982bcc6eb">
+  <producedTypes>
+    <selectionType typeId="d5d1751f-26af-4d5a-98e7-0fb1b8f30d12" valueTypeId="15bfc1b3-ae84-43f9-808d-480195485d57"/>
+    <listType typeId="2e139c9f-fcc2-4a6b-b815-f5f92a912bf9" valueTypeId="dcef4a68-2da6-4f65-a11c-1fa8a71af01f"/>
+    <managerType typeId="86bcc741-25c3-4a57-b268-ebfb696e5b6b" valueTypeId="71e0447e-0c91-4254-90c4-2fef426898e2"/>
+    <recordSetType typeId="0bb6578e-df27-459d-ae14-832d1740e80a" valueTypeId="c5d28e40-f881-45ba-bf1b-787ecf6af50d"/>
+    <recordKeyType typeId="e4eb492b-441f-4708-800b-45d500f6cd9e" valueTypeId="11110d66-f9aa-4085-8c25-3dbe8ec6bad0"/>
+    <recordType typeId="eb4f448c-ec9c-4459-a878-484569828fd2" valueTypeId="cb232a45-1cfd-423f-bdc5-ca6fe3fa07bd"/>
+  </producedTypes>
+  <name>Продажи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="4fd80773-4f7a-4ad5-a9bf-1c5f0014ae9e">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a8cde3b9-7ac0-43a5-bde6-c53bdbd99125">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
