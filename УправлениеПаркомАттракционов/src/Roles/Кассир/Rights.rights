@@ -34,6 +34,13 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.Продажи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.МаксимальнаяДоляОплатыБаллами</name>
 		<right>
 			<name>Read</name>
@@ -130,6 +137,13 @@
 		</right>
 		<right>
 			<name>Output</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.БонусныеБаллыКлиентов</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
